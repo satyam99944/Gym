@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background: url(background.jpg);
+            background-size: 2700px 1500px;
+        }
+
+        #left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+
+        }
+
+        #left img {
+            filter: invert(100%);
+            width: 50px;
+            display: block;
+            margin: auto;
+        }
+
+        #left div {
+            font-weight: bold;
+        }
+
+        #mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+        }
+
+        #navebar ul {
+            list-style: none;
+            overflow: auto;
+            margin: 0 auto;
+        }
+
+        #navebar ul li {
+            float: left;
+            margin: 15px 25px;
+        }
+
+        #navebar a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        #navebar a:hover,
+        :active {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        #right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 60px;
+            top: 20px;
+        }
+
+        #right button {
+            margin-left: 20px;
+            font-size: 15px;
+            margin-top: 15px;
+            color: white;
+            background: none;
+            cursor: pointer;
+        }
+
+        #container {
+            border: 3px solid white;
+            width: 35%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 106px 80px;
+        }
+
+        #container form input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 408px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        #btn {
+            margin-left: 20px;
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: white;
+            background: none;
+            cursor: pointer;
+        }
+
+        #gender input {
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- left box -->
+        <div id="left">
+            <img src="logo.png" alt="logo">
+            <div>Satyam Fitness</div>
+        </div>
+        <!-- mid box -->
+        <div id="mid">
+            <nav id="navebar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">help</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- right box -->
+        <div id="right">
+            <button>Email us</button>
+            <button>sign up</button>
+        </div>
+    </header>
+    <div id="container">
+        <h2>Join the best gym of Bhagalpur now</h2>
+        <form action="backend.php">
+            <div><input type="text" placeholder="Enter your Name"></div>
+            <div><input type="email" placeholder="Enter your Email"></div>
+            <div> <input type="number" placeholder="Enter your Age"></div>
+            <div><input type="text" placeholder="Enter your Gender"></div>
+           
+            <div>
+                <button id="btn">Submit</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
